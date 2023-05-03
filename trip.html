@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+          integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    <script src="index.js"></script>
+    <title>Trip</title>
+
+
+</head>
+<body>
+<div class="loader-wrapper">
+    <div class="loader"></div>
+</div>
+
+<header class="header_trip">
+    <nav class="menu">
+        <div class="title_trip">
+            поездка
+        </div>
+        <ul class="menu_ul">
+            <li class="menu_li"><img src="/images/circle-xmark-regular.svg"></li>
+            <li class="menu_li" onclick="summon()"><img src="/images/handshake-angle-solid.svg"></li>
+            <li class="menu_li" onclick="getInfo()"><img src="/images/forward-solid.svg"></li>
+        </ul>
+    </nav>
+</header>
+<div class="main">
+    <div class="main_elem current">
+        человек в автобусе:
+    </div>
+    <div class="main_elem entered">
+        человек вошло:
+    </div>
+    <div class="main_elem paid">
+        оплаты:
+    </div>
+    <br>
+    <br>
+    <div class="main_elem total">
+        всего пассажиров за рейс:
+    </div>
+    <div class="main_elem not-paid">
+        всего без билета:
+    </div>
+</div>
+
+<div id="video-carousel">
+    <div>
+        <video src="video/cam5/5_2023-04-23_10-05-01.mp4" width="320" height="240" controls></video>
+    </div>
+    <div>
+        <video src="video/cam5/5_2023-04-23_10-05-01.mp4" width="320" height="240" controls></video>
+    </div>
+    <div>
+        <video src="video/cam5/5_2023-04-23_10-05-01.mp4" width="320" height="240" controls></video>
+    </div>
+</div>
+
+</body>
+</html>
